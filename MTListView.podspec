@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "ListView"
+  s.name         = "MTListView"
   s.version      = "0.0.2"
   s.summary      = "ListView based on UICollectionView"
 
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
    s.platform     = :ios, "8.0"
 
 
-  s.source       = { :git => "https://github.com/taiyungo/ListView.git" }
+  s.source       = { :git => "https://github.com/taiyungo/ListView.git", :tag => '0.0.2' }
 
 
   s.source_files  = "ListView", "ListView/**/*.{h,m,swift}"

@@ -12,22 +12,11 @@
 		83A109011F4FD90100D57943 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A109001F4FD90100D57943 /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		83A108F21F4FD69100D57943 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83A108EE1F4FD69100D57943 /* ListViewExample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 83A108D61F4FD5F600D57943;
-			remoteInfo = ListViewExample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		83A108BD1F4FD2A600D57943 /* ListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A108C01F4FD2A600D57943 /* ListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		83A108C11F4FD2A600D57943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A108C91F4FD2DA00D57943 /* ListDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDatasource.swift; sourceTree = "<group>"; };
-		83A108EE1F4FD69100D57943 /* ListViewExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ListViewExample.xcodeproj; path = ListViewExample/ListViewExample.xcodeproj; sourceTree = "<group>"; };
 		83A109001F4FD90100D57943 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +34,6 @@
 		83A108B31F4FD2A600D57943 = {
 			isa = PBXGroup;
 			children = (
-				83A108EE1F4FD69100D57943 /* ListViewExample.xcodeproj */,
 				83A108BF1F4FD2A600D57943 /* ListView */,
 				83A108BE1F4FD2A600D57943 /* Products */,
 			);
@@ -76,14 +64,6 @@
 				83A109001F4FD90100D57943 /* ListCell.swift */,
 			);
 			name = Sources;
-			sourceTree = "<group>";
-		};
-		83A108EF1F4FD69100D57943 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				83A108F31F4FD69100D57943 /* ListViewExample.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,28 +125,12 @@
 			mainGroup = 83A108B31F4FD2A600D57943;
 			productRefGroup = 83A108BE1F4FD2A600D57943 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 83A108EF1F4FD69100D57943 /* Products */;
-					ProjectRef = 83A108EE1F4FD69100D57943 /* ListViewExample.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				83A108BC1F4FD2A600D57943 /* ListView */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		83A108F31F4FD69100D57943 /* ListViewExample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = ListViewExample.app;
-			remoteRef = 83A108F21F4FD69100D57943 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		83A108BB1F4FD2A600D57943 /* Resources */ = {
@@ -322,7 +286,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -344,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.taiyungo.ListView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

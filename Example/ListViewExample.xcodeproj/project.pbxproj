@@ -15,7 +15,18 @@
 		83A108E41F4FD5F600D57943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A108E21F4FD5F600D57943 /* LaunchScreen.storyboard */; };
 		83A108EC1F4FD63000D57943 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A108EB1F4FD63000D57943 /* Cells.swift */; };
 		83A109041F4FE1DE00D57943 /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A109031F4FE1DE00D57943 /* NibCell.xib */; };
+		83CA75901F8781D5008B6646 /* ListViewExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CA758F1F8781D5008B6646 /* ListViewExampleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83CA75921F8781D5008B6646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83A108CE1F4FD5F600D57943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83A108D51F4FD5F600D57943;
+			remoteInfo = ListViewExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		83A108FF1F4FD6BD00D57943 /* Embed Frameworks */ = {
@@ -41,6 +52,9 @@
 		83A108E51F4FD5F600D57943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A108EB1F4FD63000D57943 /* Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		83A109031F4FE1DE00D57943 /* NibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
+		83CA758D1F8781D5008B6646 /* ListViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CA758F1F8781D5008B6646 /* ListViewExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewExampleTests.swift; sourceTree = "<group>"; };
+		83CA75911F8781D5008B6646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98F58F3931057562320C6F1C /* Pods-ListViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListViewExample/Pods-ListViewExample.release.xcconfig"; sourceTree = "<group>"; };
 		AA5BEEDC39384B1936EFDF47 /* Pods-ListViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListViewExample/Pods-ListViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +65,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				381B129641FFD31B4EBC5427 /* Pods_ListViewExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CA758A1F8781D5008B6646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				83A108D81F4FD5F600D57943 /* ListViewExample */,
+				83CA758E1F8781D5008B6646 /* ListViewExampleTests */,
 				83A108D71F4FD5F600D57943 /* Products */,
 				90985454B50B762C19A47E62 /* Frameworks */,
 				3FC4CE3B71778DE29055603C /* Pods */,
@@ -80,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				83A108D61F4FD5F600D57943 /* ListViewExample.app */,
+				83CA758D1F8781D5008B6646 /* ListViewExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +128,15 @@
 				83A108E21F4FD5F600D57943 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83CA758E1F8781D5008B6646 /* ListViewExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				83CA758F1F8781D5008B6646 /* ListViewExampleTests.swift */,
+				83CA75911F8781D5008B6646 /* Info.plist */,
+			);
+			path = ListViewExampleTests;
 			sourceTree = "<group>";
 		};
 		90985454B50B762C19A47E62 /* Frameworks */ = {
@@ -139,13 +171,31 @@
 			productReference = 83A108D61F4FD5F600D57943 /* ListViewExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		83CA758C1F8781D5008B6646 /* ListViewExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CA75961F8781D5008B6646 /* Build configuration list for PBXNativeTarget "ListViewExampleTests" */;
+			buildPhases = (
+				83CA75891F8781D5008B6646 /* Sources */,
+				83CA758A1F8781D5008B6646 /* Frameworks */,
+				83CA758B1F8781D5008B6646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83CA75931F8781D5008B6646 /* PBXTargetDependency */,
+			);
+			name = ListViewExampleTests;
+			productName = ListViewExampleTests;
+			productReference = 83CA758D1F8781D5008B6646 /* ListViewExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83A108CE1F4FD5F600D57943 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = taiyungo;
 				TargetAttributes = {
@@ -154,6 +204,12 @@
 						DevelopmentTeam = 3GQZ9TL5M3;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+					};
+					83CA758C1F8781D5008B6646 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 3GQZ9TL5M3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83A108D51F4FD5F600D57943;
 					};
 				};
 			};
@@ -171,6 +227,7 @@
 			projectRoot = "";
 			targets = (
 				83A108D51F4FD5F600D57943 /* ListViewExample */,
+				83CA758C1F8781D5008B6646 /* ListViewExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +241,13 @@
 				83A109041F4FE1DE00D57943 /* NibCell.xib in Resources */,
 				83A108E11F4FD5F600D57943 /* Assets.xcassets in Resources */,
 				83A108DF1F4FD5F600D57943 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CA758B1F8781D5008B6646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +318,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83CA75891F8781D5008B6646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CA75901F8781D5008B6646 /* ListViewExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83CA75931F8781D5008B6646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83A108D51F4FD5F600D57943 /* ListViewExample */;
+			targetProxy = 83CA75921F8781D5008B6646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		83A108DD1F4FD5F600D57943 /* Main.storyboard */ = {
@@ -415,6 +495,48 @@
 			};
 			name = Release;
 		};
+		83CA75941F8781D5008B6646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GQZ9TL5M3;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ListViewExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taiyungo.ListViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListViewExample.app/ListViewExample";
+			};
+			name = Debug;
+		};
+		83CA75951F8781D5008B6646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GQZ9TL5M3;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ListViewExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.taiyungo.ListViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListViewExample.app/ListViewExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,6 +554,15 @@
 			buildConfigurations = (
 				83A108E91F4FD5F600D57943 /* Debug */,
 				83A108EA1F4FD5F600D57943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CA75961F8781D5008B6646 /* Build configuration list for PBXNativeTarget "ListViewExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CA75941F8781D5008B6646 /* Debug */,
+				83CA75951F8781D5008B6646 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

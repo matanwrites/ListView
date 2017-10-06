@@ -16,7 +16,7 @@ matrix:
     - osx_image: xcode8.3
       env: DESTINATION="iPhone 6 Plus (8.4)" SWIFT_VERSION="3.0"
 
-language: swift
+language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
 before_install:

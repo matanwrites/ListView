@@ -1,6 +1,0 @@
-framework module MTListView {
-  umbrella header "MTListView-umbrella.h"
-
-  export *
-  module * { export * }
-}

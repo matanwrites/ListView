@@ -7,15 +7,6 @@ matrix:
     - osx_image: xcode9
       env: DESTINATION="iPhone X (11.0)" SWIFT_VERSION="4.0"
 
-    - osx_image: xcode9
-      env: DESTINATION="iPhone 7 Plus (10.3.1)" SWIFT_VERSION="3.2"
-
-    - osx_image: xcode8.3
-      env: DESTINATION="iPhone 6s Plus (9.3)" SWIFT_VERSION="3.1"
-
-    - osx_image: xcode8.3
-      env: DESTINATION="iPhone 6 Plus (8.4)" SWIFT_VERSION="3.0"
-
 language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
@@ -27,18 +18,13 @@ before_install:
 # Prelaunching simulator to avoid timeout https://github.com/travis-ci/travis-ci/issues/6422
 - open -a "simulator" --args -CurrentDeviceUDID $DESTINATION_UDID
 script:
-- set -o pipefail
-- xcodebuild -version
-- xcodebuild -showsdks
-- xcodebuild
-  -project "$FRAMEWORK_NAME.xcodeproj"
-  -scheme "$FRAMEWORK_NAME-$SCHEME"
-  -sdk "$SDK"
-  -destination "$DESTINATION"
-  -configuration Debug
-  ONLY_ACTIVE_ARCH=YES
-  GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
-  GCC_GENERATE_TEST_COVERAGE_FILES=YES
-  test
+- set -o pipefail && xcodebuild test
+ `` -enableCodeCoverage YES
+ `` -workspace Example/ListView.xcworkspace
+ `` -scheme ListViewExample
+ `` -sdk iphonesimulator
+ `` -destination "id=$DESTINATION_UDID"
+ `` ONLY_ACTIVE_ARCH=NO
+ `` | xcpretty
 - echo $SWIFT_VERSION > .swift-version
 - pod lib lint

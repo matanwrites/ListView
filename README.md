@@ -1,5 +1,12 @@
 # ListView
-a ListView with a simple API to stack different kind of cells vertically
+
+[![CI Status](http://img.shields.io/travis/matanwrites/ListView.svg?style=flat)](https://travis-ci.org/matanwrites/ListView)
+[![Version](https://img.shields.io/cocoapods/v/MTListView.svg?style=flat)](http://cocoapods.org/pods/MTListView)
+[![License](https://img.shields.io/cocoapods/l/MTListView.svg?style=flat)](http://cocoapods.org/pods/MTListView)
+[![Platform](https://img.shields.io/cocoapods/p/MTListView.svg?style=flat)](http://cocoapods.org/pods/MTListView)
+
+
+A ListView with a simple API to stack different kind of cells vertically
 
 ```swift
 class ViewController: UIViewController {

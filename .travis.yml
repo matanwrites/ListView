@@ -20,7 +20,7 @@ before_install:
 script:
 - set -o pipefail && xcodebuild test
  `` -enableCodeCoverage YES
- `` -workspace Example/ListView.xcworkspace
+ `` -workspace Example/ListViewExample.xcworkspace
  `` -scheme ListViewExample
  `` -sdk iphonesimulator
  `` -destination "id=$DESTINATION_UDID"

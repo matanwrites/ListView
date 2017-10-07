@@ -8,6 +8,8 @@
 
 A ListView with a simple API to stack different kind of cells vertically
 
+## Example
+
 ```swift
 class ViewController: UIViewController {
 
@@ -37,4 +39,25 @@ class ViewController: UIViewController {
         }
     }
 }
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+
+## Installation
+
+MTListView is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'MTListView'
+```
+
+
+## Author
+
+matanwrites, https://twitter.com/matanwrites
+
+## License
+
+MTListView is available under the MIT license. See the LICENSE file for more info.
 

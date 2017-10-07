@@ -4,6 +4,9 @@
 [![Version](https://img.shields.io/cocoapods/v/MTListView.svg?style=flat)](http://cocoapods.org/pods/MTListView)
 [![License](https://img.shields.io/cocoapods/l/MTListView.svg?style=flat)](http://cocoapods.org/pods/MTListView)
 [![Platform](https://img.shields.io/cocoapods/p/MTListView.svg?style=flat)](http://cocoapods.org/pods/MTListView)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/matanwrites/JobQueue/blob/master/LICENSE.md)
+
 
 
 A ListView with a simple API to stack different kind of cells vertically
